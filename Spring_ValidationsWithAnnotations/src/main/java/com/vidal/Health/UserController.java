@@ -25,6 +25,7 @@ public ModelAndView createUser(@ModelAttribute("user") @Valid User user, Binding
 	if(result.hasErrors()) {
 		return new ModelAndView("user");
 	}
+	//sadiq shaik
 	
 	model.addAttribute("name",user.getName());
 	model.addAttribute("age",user.getAge());
@@ -33,3 +34,4 @@ public ModelAndView createUser(@ModelAttribute("user") @Valid User user, Binding
 	//return new ModelAndView("redirect:views/success.jsp");
 }
 }
+ 
